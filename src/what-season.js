@@ -16,7 +16,7 @@ const { NotImplementedError } = require('../extensions/index.js');
       return 'Unable to determine the time of year!';
     }
     
-    if (!(date instanceof Date) || isNaN(date)) {
+    if (isNaN(date)) {
       throw new Error('Invalid date!');
     }
     
